@@ -1,0 +1,38 @@
+html{
+  overflow-x: hidden;
+}
+.logo-title{
+  font-family: 'nebularegular';
+}
+.bg-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.brabus{
+  background-image: url('/img/mustang.webp');
+}
+.ferrari{
+  background-image: url('/img/ferrari.webp');
+}
+.alfa{
+  background-image: url('/img/alfa.webp');
+}
+.fuel{
+  background-image: url('/img/audi.webp');
+}
+.piou{
+  padding-top: 50vh;
+}
+
+.presentation{
+  background: rgba(0, 0, 0, 0.719);
+  h1{
+    font-family: 'nebula_hollowregular';
+    font-size: calc(2vw + 2vh + 2vmin);
+  }
+  p{
+    font-size: calc(1vw + 1vh + 1vmin);
+    font-family: sans-serif;
+  }
+}
