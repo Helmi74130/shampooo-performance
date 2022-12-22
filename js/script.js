@@ -50,7 +50,7 @@ function time(){
     if (count === 100) {
       setTimeout(() => {
         count = 0
-      progressBar.style.width = '0%'
+        progressBar.style.width = '0%'
       }, 1000);
     }
   }, 1000);
@@ -59,3 +59,13 @@ function time(){
 if (progressBar.style.width === '0%') {
   time()
 }
+
+let iconWhatsapp = document.querySelector('.whatsapp');
+
+function removeNone(){
+  iconWhatsapp.classList.remove('none');
+  iconWhatsapp.classList.add('bounce-in-top');
+}
+setTimeout(()=>{
+  removeNone()
+},5000)
