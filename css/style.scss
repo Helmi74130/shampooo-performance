@@ -1,3 +1,4 @@
+
 html{
   overflow-x: hidden;
   height: 10000px;
@@ -28,9 +29,13 @@ h2{
     font-weight: bold;
 }
 .images{
+  border-radius: 10px;
+  height: 600px;
   &:hover{
-    cursor: crosshair;
+    cursor: url("../img/chiffon.svg"), default;
+    border: 1px solid #ffca2c;
   }
+
 }
 .img-container{
   position: relative;
@@ -43,13 +48,12 @@ h2{
     transition: .5s ease;
     background: rgba(0, 0, 0, 0.582);
     font-size: 1.5em;
-    opacity: 1;
+    opacity: 0;
     position: absolute;
-    top: 0;
-    left: 25%;
+    top: 10px;
+    left: 0;
     color: white;
     padding: 10px;
-
   }
 }
 
@@ -87,6 +91,7 @@ h2{
 .volant{
   height: 600px;
   width: 100%;
+  opacity: 0.9;
   }
 .img-fixed{
   position: fixed;
@@ -128,3 +133,36 @@ h2{
  @-webkit-keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-top{0%{-webkit-transform:translateY(-500px);transform:translateY(-500px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-65px);transform:translateY(-65px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-28px);transform:translateY(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
 
  @-webkit-keyframes ping{0%{-webkit-transform:scale(.2);transform:scale(.2);opacity:.8}80%{-webkit-transform:scale(1.2);transform:scale(1.2);opacity:0}100%{-webkit-transform:scale(2.2);transform:scale(2.2);opacity:0}}@keyframes ping{0%{-webkit-transform:scale(.2);transform:scale(.2);opacity:.8}80%{-webkit-transform:scale(1.2);transform:scale(1.2);opacity:0}100%{-webkit-transform:scale(2.2);transform:scale(2.2);opacity:0}}
+
+ .section-more{
+  margin-top: 60px;
+  h3{
+    font-family: 'starife_demoregular';
+    font-size: calc(1.5vw + 4vh + 2vmin);
+    text-align: center;
+  }
+  .more{
+    display: flex;
+    height: auto;
+    overflow-x: scroll;
+    cursor: grab;
+    margin-top: 50px;
+    &::-webkit-scrollbar { width: 0 }
+    div{
+      text-align: center;
+      height: 100%;
+      img{
+        height: 400px;
+        transition: 0.3s;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+      p{
+        margin-top: 20px;
+        font-family: "mortal_waveregular";
+        font-size: calc(0.1vw + 2vh + 2vmin);
+      }
+    }
+  }
+}

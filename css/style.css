@@ -33,8 +33,14 @@ h2 {
   font-weight: bold;
 }
 
+.images {
+  border-radius: 10px;
+  height: 600px;
+}
+
 .images:hover {
-  cursor: crosshair;
+  cursor: url("../img/chiffon.svg"), default;
+  border: 1px solid #ffca2c;
 }
 
 .img-container {
@@ -50,10 +56,10 @@ h2 {
   transition: .5s ease;
   background: rgba(0, 0, 0, 0.582);
   font-size: 1.5em;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
-  top: 0;
-  left: 25%;
+  top: 10px;
+  left: 0;
   color: white;
   padding: 10px;
 }
@@ -95,6 +101,7 @@ h2 {
 .volant {
   height: 600px;
   width: 100%;
+  opacity: 0.9;
 }
 
 .img-fixed {
@@ -289,5 +296,52 @@ h2 {
     transform: scale(2.2);
     opacity: 0;
   }
+}
+
+.section-more {
+  margin-top: 60px;
+}
+
+.section-more h3 {
+  font-family: 'starife_demoregular';
+  font-size: calc(1.5vw + 4vh + 2vmin);
+  text-align: center;
+}
+
+.section-more .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  overflow-x: scroll;
+  cursor: -webkit-grab;
+  cursor: grab;
+  margin-top: 50px;
+}
+
+.section-more .more::-webkit-scrollbar {
+  width: 0;
+}
+
+.section-more .more div {
+  text-align: center;
+  height: 100%;
+}
+
+.section-more .more div img {
+  height: 400px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.section-more .more div img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.section-more .more div p {
+  margin-top: 20px;
+  font-family: "mortal_waveregular";
+  font-size: calc(0.1vw + 2vh + 2vmin);
 }
 /*# sourceMappingURL=style.css.map */
