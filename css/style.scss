@@ -1,5 +1,6 @@
 html{
   overflow-x: hidden;
+  height: 10000px;
 }
 .logo-title{
   font-family: 'nebularegular';
@@ -35,14 +36,20 @@ h2{
   position: relative;
   &:hover .clique{
     opacity: 1;
+    
+
   }
   .clique{
     transition: .5s ease;
-    opacity: 0;
+    background: rgba(0, 0, 0, 0.582);
+    font-size: 1.5em;
+    opacity: 1;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 25%;
+    color: white;
+    padding: 10px;
+
   }
 }
 
@@ -61,7 +68,33 @@ h2{
     z-index: -1;
   }
 }
-
+.vitrine{
+  h3{
+    font-size: calc(1.5vw + 1vh + 1vmin);
+    font-family: sans-serif;
+  }
+  p{
+    font-size:calc(0.8vw + 1vh + 1vmin);
+  }
+  button{
+    font-family: 'nebularegular';
+    font-weight: 900;
+  }
+}
+.main-index{
+  background: rgba(255, 255, 255, 0.473);
+}
+.volant{
+  height: 600px;
+  width: 100%;
+  }
+.img-fixed{
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
 .bg-img{
   background-size: cover;
   background-repeat: no-repeat;
@@ -82,7 +115,9 @@ h2{
 .piou{
   padding-top: 40vh;
 }
-
+.pt-performance{
+  padding-top: 20vh;
+}
 .none{
   display: none;
 }

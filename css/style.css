@@ -1,5 +1,6 @@
 html {
   overflow-x: hidden;
+  height: 10000px;
 }
 
 .logo-title {
@@ -47,12 +48,14 @@ h2 {
 .img-container .clique {
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  opacity: 0;
+  background: rgba(0, 0, 0, 0.582);
+  font-size: 1.5em;
+  opacity: 1;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 0;
+  left: 25%;
+  color: white;
+  padding: 10px;
 }
 
 .whatsapp {
@@ -69,6 +72,37 @@ h2 {
   border-top: 20px solid #198754;
   position: absolute;
   z-index: -1;
+}
+
+.vitrine h3 {
+  font-size: calc(1.5vw + 1vh + 1vmin);
+  font-family: sans-serif;
+}
+
+.vitrine p {
+  font-size: calc(0.8vw + 1vh + 1vmin);
+}
+
+.vitrine button {
+  font-family: 'nebularegular';
+  font-weight: 900;
+}
+
+.main-index {
+  background: rgba(255, 255, 255, 0.473);
+}
+
+.volant {
+  height: 600px;
+  width: 100%;
+}
+
+.img-fixed {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
 }
 
 .bg-img {
@@ -95,6 +129,10 @@ h2 {
 
 .piou {
   padding-top: 40vh;
+}
+
+.pt-performance {
+  padding-top: 20vh;
 }
 
 .none {
