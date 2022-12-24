@@ -56,7 +56,26 @@ h2{
   }
 }
 
+.title-contact{
+    font-size: calc(2vw + 2vh + 1vmin);
+    font-family: 'nebularegular';
+}
 
+.cube{
+  height: 60%;
+  width: 30%;
+  text-align: center;
+  border-radius:13% 87% 17% 83% / 27% 38% 62% 73% ;
+  padding: 30px;
+  background: rgba(24, 23, 23, 0.932);
+  .text-perf{
+    font-size: calc(1vw + 1vh + 1vmin);
+    font-family: 'nebula_hollowregular';
+  }
+  p{
+    
+  }
+}
 .whatsapp{
   bottom: 50px;
   right: 50px;
@@ -171,4 +190,18 @@ h2{
   p{
     font-size: calc(0.3vw + 0.3vh + 2vmin);
   }
+}
+
+.about{
+  background: rgb(20, 19, 19);
+  div{
+    p{
+      font-size: calc(0.5vw + 0.5vh + 2vmin);
+      line-height: 2em;
+    }
+  }
+}
+.text-footer{
+  font-family: 'nebularegular';
+  text-shadow: 4px 2px 2px rgba(68, 0, 255, 0.897);
 }
