@@ -1,7 +1,6 @@
 
 html{
   overflow-x: hidden;
-  height: 10000px;
 }
 .logo-title{
   font-family: 'nebularegular';
@@ -137,7 +136,6 @@ h2{
  .section-more{
   margin-top: 60px;
   h3{
-    font-family: 'starife_demoregular';
     font-size: calc(1.5vw + 4vh + 2vmin);
     text-align: center;
   }
@@ -149,20 +147,27 @@ h2{
     margin-top: 50px;
     &::-webkit-scrollbar { width: 0 }
     div{
-      text-align: center;
       height: 100%;
+      margin-right: 20px;
       img{
         height: 400px;
         transition: 0.3s;
         &:hover{
-          transform: scale(1.1);
+          box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
         }
       }
-      p{
-        margin-top: 20px;
-        font-family: "mortal_waveregular";
-        font-size: calc(0.1vw + 2vh + 2vmin);
-      }
     }
+  }
+}
+
+.tarif{
+  width: 100vw;
+  h3{
+    font-family: 'nebularegular';
+    font-size: calc(1vw + 1vh + 2vmin);
+  }
+
+  p{
+    font-size: calc(0.3vw + 0.3vh + 2vmin);
   }
 }
