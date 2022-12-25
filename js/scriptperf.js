@@ -1,3 +1,5 @@
+AOS.init();
+
 let iconWhatsapp = document.querySelector('.whatsapp');
 
 function removeNone(){

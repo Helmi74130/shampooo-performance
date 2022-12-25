@@ -1,3 +1,5 @@
+AOS.init();
+
 let bgImg = document.querySelector('#bgImg');
 let progressBar = document.querySelector('.progress-bar')
 let subTitleText = document.querySelector('#subTitleText')
@@ -70,4 +72,16 @@ setTimeout(()=>{
   removeNone()
 },8000)
 
+let header = document.querySelector('#header')
 
+/* window.addEventListener("scroll", ()=>{
+  if (window.scrollY > 1000) {
+    header.classList.add('fixed-top')
+    header.classList.add('slide-in-top')
+  }else{
+    header.classList.remove('slide-in-top')
+    header.classList.remove('fixed-top')
+    
+  }
+})
+ */
