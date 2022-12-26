@@ -79,15 +79,8 @@ h2{
 .whatsapp{
   bottom: 50px;
   right: 50px;
-  &::after{
-    content: "";
-    top: 50px;
-    left: 100px;
-    border-left:20px solid transparent;
-    border-right:20px solid transparent;
-    border-top: 20px solid #198754;
-    position: absolute;
-    z-index: -1;
+  button{
+    font-size: calc(1vw + 1vh + 1vmin);
   }
 }
 .vitrine{
@@ -205,9 +198,39 @@ h2{
   font-family: 'nebularegular';
   text-shadow: 4px 2px 2px rgba(68, 0, 255, 0.897);
 }
-
+.video{
+  height: 450px;
+}
 .slide-in-top{animation:slide-in-top 1.5s cubic-bezier(.25,.46,.45,.94) both}
 .slide-out-top{animation:slide-out-top .5s cubic-bezier(.55,.085,.68,.53) both}
 
 @keyframes slide-in-top{0%{transform:translateY(-1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
 @keyframes slide-out-top{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-1000px);opacity:0}}
+
+@media screen and (max-width: 990px) {
+  #app{
+    margin-top: 20vh;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .video{
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .video{
+    height: 200px;
+  }
+  .whatsapp{
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .video{
+    height: 150px;
+  }
+}
