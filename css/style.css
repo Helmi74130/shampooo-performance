@@ -51,16 +51,29 @@ h2 {
 }
 
 .img-container .clique {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
   background: rgba(0, 0, 0, 0.582);
   font-size: 1.5em;
   opacity: 0;
   position: absolute;
   top: 10px;
-  left: 0;
+  left: 50px;
   color: white;
   padding: 10px;
+}
+
+.cliques-phone {
+  background: rgba(0, 0, 0, 0.582);
+  font-size: 1em;
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  top: 10px;
+  color: white;
+  padding: 5px;
 }
 
 .title-contact {
@@ -146,11 +159,11 @@ h2 {
 }
 
 .piou {
-  padding-top: 40vh;
+  padding-top: 15vh;
 }
 
 .pt-performance {
-  padding-top: 20vh;
+  padding-top: 20px;
 }
 
 .none {
@@ -439,12 +452,6 @@ h2 {
     -webkit-transform: translateY(-1000px);
             transform: translateY(-1000px);
     opacity: 0;
-  }
-}
-
-@media screen and (max-width: 990px) {
-  #app {
-    margin-top: 20vh;
   }
 }
 
